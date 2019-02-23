@@ -1,13 +1,17 @@
-
 {% extends 'base.html' %}
-{%block content%}
-<div class="title"> hello wordcount site hihi </div>
+    
+{% block content%}
+
+
+<div class="a"> 글을 써주세요 </div>
 
 <a href="{%url 'about' %}">ABOUT</a>
 
 <form action="{%url 'result'%}">
     <textarea cols="40" rows="10" name="fulltext"></textarea>
     <br>
-    <input type="submit" value="Count!"/>   
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">GO!</button>
 </form>
-{%endblock%}
+
+{% endblock %}
+
